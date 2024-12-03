@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music Player</title>
+
+        <!-- Fontawesome cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- 
+        - CUSTOM CSS LINK
+     -->
+
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="thumbnail">
+                <img src="./media/Cutting-ties-thumbnail.jpg" />
+            </div>
+
+            <div class="content">
+                <h1 class="title">Cutting Ties</h1>
+                <p class="artist">6lack</p>
+
+                <audio id="music">
+                    <source src="./media/01 6lack - Cutting Ties.mp3" />
+                </audio>
+
+                <input type="range" id="progress" value="0" />
+
+                <div class="controls">
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-play play-pause-btn"></i>
+                    <i class="fa-solid fa-backward-step fa-flip-horizontal"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+        - CUSTOM JS SCRIPT
+     -->
+        <script src="script.js"></script>
+    </body>
+</html>

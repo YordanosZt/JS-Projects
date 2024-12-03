@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+
+        <!-- 
+        - css link
+     -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- 
+            - fontawesome cdn
+         -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+
+
+        <!-- 
+            - NAV BAR
+         -->
+
+
+        <nav class="nav-">
+            <img src="images/logo.png" alt="" class="logo" />
+
+            <div class="input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search city ...">
+            </div>
+
+            <button class="current-location">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <span>Current Location</span>
+            </bu>
+        </nav>
+
+
+        <!-- 
+            - SIDE SECTION
+         -->
+
+
+         
+         <main>
+             <section class="side-section">
+                <div class="side--current-weather-container">
+                    <p>Now</p>
+                    <div class="side--weather">
+                        <h1>5<span>°C</span></h1>
+                        <img src="images/weather_icons/04d.png" alt="" class="side--weather-img">
+                    </div>
+                    <h3 class="side--weather-type">...</h3>
+    
+                    <div class="side--data">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Wednesday 1, Mar</span>
+                    </div>
+    
+                    <div class="side--location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>London, GB</span>
+                    </div>
+                </div>
+
+                <h1 class="side--forecast-title">5 Days Forecast</h1>
+
+                <div class="side--forecast-container">
+                    <ul class="side--forecasts-list">
+                        <li class="side--forecast-item">
+                            <div>
+                                <img src="images/weather_icons/01d.png" alt="">
+                                <span>7°</span>
+                            </div>
+    
+                            <p class="side--date-month">2 Mar</p>
+                            <p class="side--day">Thursday</p>
+                        </li>
+                        <li class="side--forecast-item">
+                            <div>
+                                <img src="images/weather_icons/02d.png" alt="">
+                                <span>7°</span>
+                            </div>
+    
+                            <p class="side--date-month">3 Mar</p>
+                            <p class="side--day">Friday</p>
+                        </li>
+                        <li class="side--forecast-item">
+                            <div>
+                                <img src="images/weather_icons/02d.png" alt="">
+                                <span>7°</span>
+                            </div>
+    
+                            <p class="side--date-month">4 Mar</p>
+                            <p class="side--day">Saturday</p>
+                        </li>
+                        <li class="side--forecast-item">
+                            <div>
+                                <img src="images/weather_icons/04d.png" alt="">
+                                <span>7°</span>
+                            </div>
+    
+                            <p class="side--date-month">5 Mar</p>
+                            <p class="side--day">Sunday</p>
+                        </li>
+                        <li class="side--forecast-item">
+                            <div>
+                                <img src="images/weather_icons/03d.png" alt="">
+                                <span>7°</span>
+                            </div>
+    
+                            <p class="side--date-month">6 Mar</p>
+                            <p class="side--day">Monday</p>
+                        </li>
+                    </ul>
+                </div>
+             </section>
+
+
+             <section class="main-section">
+                <div class="highlights-container">
+                    <h1>Today's Highlights</h1>
+                    
+                    <ul class="row01">
+
+                        <div class="air-quality-index">
+                            <div class="main--title">
+                                <h2>Air Quality Index</h2>
+                                <span class="main--status">Good</span>
+                            </div>
+
+                            <ul class="air-details details">
+                                <i class="fa-solid fa-wind"></i>
+                                <li>
+                                    <span>PM2S</span>
+                                    <p>3.90</p>
+                                </li>
+                                <li>
+                                    <span>SO2</span>
+                                    <p>7.75</p>
+                                </li>
+                                <li>
+                                    <span>NO2</span>
+                                    <p>33.6</p>
+                                </li>
+                                <li>
+                                    <span>O3</span>
+                                    <p>38.6</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sunrise-sunset">
+                            <div class="main--title">
+                                <h2>Sunrise & Sunset</h2>
+                            </div>
+
+                            <ul class="sun-details details">
+                                <li>
+                                    <i class="fa-regular fa-sun"></i>
+                                    <div>
+                                        <span>Sunrise</span>
+                                        <p>6:46 AM</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <i class="fa-regular fa-moon"></i>
+                                    <div>
+                                        <span>Sunset</span>
+                                        <p>5:39 PM</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+
+                    <ul class="row02">
+                        <li class="main--humidity">
+                            <h2>Humidity</h2>
+
+                            <div>
+                                <i class="fa-solid fa-droplet"></i>
+                                <p>82%</p>
+                            </div>
+                        </li>
+
+                        <li class="main--pressure">
+                            <h2>Pressure</h2>
+
+                            <div>
+                                <i class="fa-solid fa-water"></i>
+                                <p>1025hPa</p>
+                            </div>
+                        </li>
+
+                        <li class="main--visibility">
+                            <h2>Visibility</h2>
+
+                            <div>
+                                <i class="fa-regular fa-eye"></i>
+                                <p>10km</p>
+                            </div>
+                        </li>
+
+                        <li class="main--feels-like">
+                            <h2>Feels like</h2>
+
+                            <div>
+                                <i class="fa-solid fa-temperature-low"></i>
+                                <p>2°c</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="today-at">Today at</p>
+
+                <div class="time-location-container">
+                    <ul class="main--time">
+                        <li>
+                            <p>9 PM</p>
+                            <img src="images/weather_icons/01d.png" alt="">
+                            <span>5°c</span>
+                        </li>
+                        <li>
+                            <p>12 AM</p>
+                            <img src="images/weather_icons/02d.png" alt="">
+                            <span>5°c</span>
+                        </li>
+                        <li>
+                            <p>3 AM</p>
+                            <img src="images/weather_icons/01d.png" alt="">
+                            <span>5°c</span>
+                        </li>
+                        <li>
+                            <p>6 AM</p>
+                            <img src="images/weather_icons/03d.png" alt="">
+                            <span>5°c</span>
+                        </li>
+                        <li>
+                            <p>9 AM</p>
+                            <img src="images/weather_icons/03d.png" alt="">
+                            <span>5°c</span>
+                        </li>
+                        <li>
+                            <p>12 PM</p>
+                            <img src="images/weather_icons/01d.png" alt="">
+                            <span>5°c</span>
+                        </li>
+                        <li>
+                            <p>3 PM</p>
+                            <img src="images/weather_icons/02d.png" alt="">
+                            <span>5°c</span>
+                        </li>
+                        <li>
+                            <p>6 PM</p>
+                            <img src="images/weather_icons/03d.png" alt="">
+                            <span>5°c</span>
+                        </li>
+                    </ul>
+
+                    <ul class="main--location">
+                        <li>
+                            <p>9 PM</p>
+                            <img src="images/weather_icons/direction.png" alt="">
+                            <span>8 km/h</span>
+                        </li>
+                        <li>
+                            <p>12 AM</p>
+                            <img src="images/weather_icons/direction.png" alt="">
+                            <span>8 km/h</span>
+                        </li>
+                        <li>
+                            <p>3 AM</p>
+                            <img src="images/weather_icons/direction.png" alt="">
+                            <span>9 km/h</span>
+                        </li>
+                        <li>
+                            <p>6 AM</p>
+                            <img src="images/weather_icons/direction.png" alt="">
+                            <span>9 km/h</span>
+                        </li>
+                        <li>
+                            <p>9 AM</p>
+                            <img src="images/weather_icons/direction.png" alt="">
+                            <span>8 km/h</span>
+                        </li>
+                        <li>
+                            <p>12 PM</p>
+                            <img src="images/weather_icons/direction.png" alt="">
+                            <span>10 km/h</span>
+                        </li>
+                        <li>
+                            <p>3 PM</p>
+                            <img src="images/weather_icons/direction.png" alt="">
+                            <span>8 km/h</span>
+                        </li>
+                        <li>
+                            <p>6 PM</p>
+                            <img src="images/weather_icons/direction.png" alt="">
+                            <span>9 km/h</span>
+                        </li>
+                    </ul>
+                </div>
+
+             </section>
+         </main>
+
+        <!-- 
+        - js script
+     -->
+        <script src="script.js"></script>
+    </body>
+</html>

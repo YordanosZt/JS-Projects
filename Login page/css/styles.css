@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-moz-selection {
+  background-color: #780AB2;
+  color: black;
+}
+
+::selection {
+  background-color: #780AB2;
+  color: black;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #780AB2;
+  display: grid;
+  place-items: center;
+}
+
+.main-title {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.377);
+  text-transform: uppercase;
+  text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.384);
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.container {
+  width: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.container .signup-content, .container .login-content {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 50%;
+}
+.container .login-content.hide-content {
+  display: none;
+}
+.container .signup-content {
+  display: none;
+  transform: translateX(20px);
+  transition: 0.3s;
+}
+.container .signup-content.show-content {
+  display: block;
+  transform: translateX(0px);
+}
+.container .title h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  position: relative;
+}
+.container .title h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #780AB2;
+}
+.container .input-container {
+  display: flex;
+  flex-direction: column;
+}
+.container .input-container .input-item input:not([type=checkbox]) {
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.329);
+}
+.container .input-container .input-item input:not([type=checkbox]):focus {
+  border-color: #780AB2;
+}
+.container .input-container .input-item button {
+  width: 100%;
+  background-color: rgba(119, 10, 178, 0.8);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 30px 0;
+  cursor: pointer;
+}
+.container .input-container .input-item button:hover {
+  background-color: #780AB2;
+}
+.container .input-container .input-item p {
+  text-align: center;
+  font-size: 12px;
+}
+.container .input-container .input-item p span {
+  color: #780AB2;
+  text-decoration: none;
+  cursor: pointer;
+}
+.container .input-container .input-item p span:hover {
+  text-decoration: underline;
+}
+.container .input-container .checkbox-forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .input-container .checkbox-forgot .checkbox {
+  display: flex;
+  align-items: center;
+}
+.container .input-container .checkbox-forgot .checkbox input {
+  accent-color: #780AB2;
+  margin-right: 5px;
+}
+.container .input-container .checkbox-forgot .checkbox .remember {
+  font-size: 12px;
+}
+.container .input-container .checkbox-forgot .text {
+  font-size: 12px;
+  color: #780AB2;
+  text-decoration: none;
+}
+.container .input-container .checkbox-forgot .text:hover {
+  text-decoration: underline;
+}
+.container .input-container .password-container {
+  position: relative;
+}
+.container .input-container .show {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.452);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+.container .input-container .show:hover {
+  color: #780AB2;
+}
+.container .input-container .show.line {
+  text-decoration: line-through;
+}/*# sourceMappingURL=styles.css.map */

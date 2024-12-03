@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Desto Finger</title>
+
+        <!-- 
+        - CUSTOM CSS LINK
+     -->
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <!-- <div class="picks">
+            <p>Pick a Choice</p>
+            <select id="player">
+                <option value="">Desto</option>
+                <option value="">Finger</option>
+                <option value="">Cow</option>
+                <option value="">Cowter</option>
+                <option value="">Oli</option>
+            </select>
+        </div> -->
+        <div class="picks">
+            <p>Pick a choice</p>
+            <input
+                type="text"
+                placeholder="desto, finger, cow ..."
+                class="pick"
+                onkeyup="Check()"
+            />
+            <b class="error">please enter a valid input</b>
+            <!-- <b class="btn">submit</b> -->
+        </div>
+        <div class="choice-container">
+            <h1 class="player-choice"></h1>
+            <h1 class="computer-choice"></h1>
+        </div>
+        <h2 class="answer"></h2>
+        <div class="container">
+            <div class="options">
+                <button class="desto" id="desto">Desto</button>
+                <button class="finger" id="finger">Finger</button>
+                <button class="cow" id="cow">Cow</button>
+                <button class="cowter" id="cowter">Cowter</button>
+                <button class="oli" id="oli">Oli</button>
+            </div>
+        </div>
+        <h2 class="result">You Win!!</h2>
+
+        <!-- 
+        - CUSTOM JS LINK
+     -->
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #b86990;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  background: #65394E;
+  padding: 20px 30px;
+  width: 500px;
+  box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.329);
+}
+.container .title {
+  font-size: 48px;
+  font-family: cursive;
+  color: white;
+  text-align: center;
+  text-shadow: -2px 2px 5px black;
+  margin-bottom: 20px;
+}
+.container .input-container .input-field {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.container .input-container .input-field span {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+  color: #b86990;
+}
+.container .input-container .input-field input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 10px 10px 30px;
+  background: transparent;
+  border: 2px solid #b86990;
+  color: white;
+  outline: none;
+}
+.container .input-container .input-field input::-moz-placeholder {
+  color: #b86990;
+}
+.container .input-container .input-field input:-ms-input-placeholder {
+  color: #b86990;
+}
+.container .input-container .input-field input::placeholder {
+  color: #b86990;
+}
+.container .input-container .input-field input:focus {
+  border-color: white;
+}
+.container .values {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 50px;
+}
+.container .values .number-of-people {
+  position: relative;
+}
+.container .values .number-of-people::after {
+  content: "";
+  position: absolute;
+  right: -45px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  border-radius: 5px;
+  background-color: rgba(184, 105, 145, 0.4862745098);
+}
+.container .values .number-of-people div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .values .number-of-people h1 {
+  font-size: 16px;
+  color: white;
+}
+.container .values .number-of-people p {
+  font-size: 34px;
+  margin-right: 10px;
+  color: white;
+}
+.container .values .number-of-people .increase, .container .values .number-of-people .decrease {
+  color: #b86990;
+  cursor: pointer;
+}
+.container .values .number-of-people .increase:hover, .container .values .number-of-people .decrease:hover {
+  color: white;
+}
+.container .values .price {
+  color: white;
+}
+.container .values .price h1 {
+  font-size: 16px;
+}
+.container .values .price p {
+  text-align: center;
+  font-size: 34px;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,22 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn:hover{
+    background-color: rgb(49, 79, 170);
+}
+.btn:active{
+    transform: scale(.98);
+}

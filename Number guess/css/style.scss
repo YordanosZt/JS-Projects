@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: royalblue;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+        color: white;
+        letter-spacing: 1px;
+        font-size: 26px;
+    }
+    h4 {
+        color: white;
+        margin-top: 20px;
+    }
+    .number-of-guesses {
+        font-size: 16px;
+        color: floralwhite;
+    }
+    .number {
+        color: white;
+        font-size: 35px;
+        font-weight: 800;
+        transition: 0.3s;
+        opacity: 0;
+        visibility: none;
+        pointer-events: none;
+    }
+    .number.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+    .input-container {
+        input,
+        button {
+            padding: 10px;
+            margin-block: 20px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+        }
+        button {
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                background-color: #bbb;
+            }
+        }
+    }
+}

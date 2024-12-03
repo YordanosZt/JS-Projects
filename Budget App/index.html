@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Budget App</title>
+
+        <!-- 
+        - CUSTOM CSS LINK
+     -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <div class="top-section">
+                <div class="budget-section">
+                    <h1>Budget</h1>
+                    <p class="Budget-error-message">Invalid Value</p>
+                    <input
+                        class="budget-input"
+                        type="number"
+                        placeholder="Enter Total amount"
+                    />
+                    <button class="budget-btn btn">Set Budget</button>
+                </div>
+
+                <div class="expenses-section">
+                    <h1>Expenses</h1>
+                    <p class="Expenses-error-message">Invalid Value</p>
+                    <input
+                        type="text"
+                        class="title-input"
+                        placeholder="Enter title of the product"
+                    />
+                    <input
+                        type="number"
+                        class="cost-input"
+                        placeholder="Enter cost of product"
+                    />
+                    <button class="check-amount btn">Check Amount</button>
+                </div>
+            </div>
+
+            <div class="middle-section">
+                <div class="total-budget-container">
+                    <h5>Total Budget</h5>
+                    <p class="total-budget">0</p>
+                </div>
+                <div class="expenses-container">
+                    <h5>Expenses</h5>
+                    <p class="expenses">0</p>
+                </div>
+                <div class="balance-container">
+                    <h5>Balance</h5>
+                    <p class="balance">0</p>
+                </div>
+            </div>
+
+            <div class="bottom-section">
+                <h1>Expenses List</h1>
+
+                <ul class="list">
+                    <li>
+                        <h3 class="product-name">Buy Clothes</h3>
+                        <h3 class="product-amount">26</h3>
+                        <div class="format">
+                            <p class="edit">Edit</p>
+                            <p class="delete">X</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- 
+        - CUSTOM JS SCRIPT
+     -->
+        <script src="script.js"></script>
+    </body>
+</html>

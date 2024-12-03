@@ -1,0 +1,220 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+
+    transition: .3s;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+$main-color: #780AB2;
+$lignt-main-color: #770ab2cc;
+
+::selection{
+    background-color: $main-color;
+    color: black;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+
+    background-color: $main-color;
+
+    display: grid;
+    place-items: center;
+}
+
+.main-title{
+    position: absolute;
+    top: 50px; left: 50%;
+    transform: translateX(-50%);
+
+    color: rgba(255, 255, 255, 0.377);
+    text-transform: uppercase;
+    text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.384);
+
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.container{
+    // width: 360px;
+    width: 720px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    user-select: none;
+    
+    .signup-content, .login-content{
+        background-color: white;
+        
+        padding: 20px 30px;
+        border-radius: 10px;
+
+        width: 50%;
+    }
+
+    .login-content.hide-content{
+        // opacity: 0;
+        // visibility: none;
+        // pointer-events: none;
+        display: none;
+    }
+    
+    .signup-content{
+        // opacity: 0;
+        // visibility: none;
+        // pointer-events: none;
+        display: none;
+        transform: translateX(20px);
+        transition: .3s;
+    }
+    
+    .signup-content.show-content{
+        // opacity: 1;
+        // visibility: visible;
+        // pointer-events: all;
+        display: block;
+        transform: translateX(0px);
+    }
+
+    .title{
+        h1{
+            font-size: 2rem;
+            font-weight: 900;
+
+            position: relative;
+
+            &::after{
+                content: '';
+
+                position: absolute;
+                bottom: 0px; left: 0;
+
+                width: 40px;
+                height: 3px;
+
+                border-radius: 5px;
+
+                background-color: $main-color;
+            }
+        }
+    }
+
+    .input-container{
+        display: flex;
+        flex-direction: column;
+
+        .input-item{
+
+            input:not([type="checkbox"]){
+                margin: 10px 0;
+                padding: 10px 0;
+
+                width: 100%;
+
+                border-bottom: 2px solid rgba(0, 0, 0, 0.329);
+            
+                &:focus{
+                    border-color: $main-color;
+                }
+            }
+            
+            button{
+                width: 100%;
+                
+                background-color: $lignt-main-color
+                ;
+                color: white;
+
+                border-radius: 5px;
+
+                padding: 10px 0;
+                margin: 30px 0;
+
+                cursor: pointer;
+
+                &:hover{
+                    background-color: $main-color;
+                }
+            }
+
+            p{
+                text-align: center;
+                font-size: 12px;
+
+                span{
+                    color: $main-color;
+                    text-decoration: none;
+
+                    cursor: pointer;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .checkbox-forgot{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .checkbox{
+                display: flex;
+                align-items: center;
+
+                input{
+                    accent-color: $main-color;
+                    margin-right: 5px;
+                }
+                .remember{
+                    font-size: 12px;
+                }
+            }
+
+            .text{
+                font-size: 12px;
+                color: $main-color;
+
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .password-container{
+            position: relative;
+        }
+        
+        .show{
+            position: absolute;
+            top: 50%; right: 10px;
+            transform: translateY(-50%);
+
+            color: rgba(0, 0, 0, 0.452);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 12px;
+
+            cursor: pointer;
+
+            &:hover{
+                color: $main-color;
+            }
+        }
+        .show.line{
+            text-decoration: line-through;
+        }
+    }
+}

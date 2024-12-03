@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: royalblue;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container h3 {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 26px;
+}
+.container h4 {
+  color: white;
+  margin-top: 20px;
+}
+.container .number-of-guesses {
+  font-size: 16px;
+  color: floralwhite;
+}
+.container .number {
+  color: white;
+  font-size: 35px;
+  font-weight: 800;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: none;
+  pointer-events: none;
+}
+.container .number.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.container .input-container input,
+.container .input-container button {
+  padding: 10px;
+  margin-block: 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.container .input-container button {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container .input-container button:hover {
+  background-color: #bbb;
+}/*# sourceMappingURL=style.css.map */
